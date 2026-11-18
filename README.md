@@ -1168,7 +1168,7 @@ val io: IO[Either[AppError, User]] = concurrent.either.absolve
 ## Streams (`boilerplate-fs2`)
 
 `boilerplate-fs2` is the fs2 vocabulary over the typed channel - two aliases and the observers fs2
-itself cannot provide, on `fs2-core` 3.13.0.
+itself cannot provide, for fs2 3.
 
 ```scala
 import boilerplate.stream.*

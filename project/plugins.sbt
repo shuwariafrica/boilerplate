@@ -1,9 +1,9 @@
-addSbtPlugin("africa.shuwari" % "sbt-snx" % "0.4.5")
+addSbtPlugin("africa.shuwari" % "sbt-snx" % "0.4.6")
 addSbtPlugin("org.scala-js" % "sbt-scalajs" % "1.22.0")
 
 addSbtPlugin("africa.shuwari" % "sbt-version" % "0.10.0")
-addSbtPlugin("africa.shuwari.sbt" % "sbt-shuwari-core" % "0.15.4")
+addSbtPlugin("africa.shuwari.sbt" % "sbt-shuwari-core" % "0.16.0")
 
 addSbtPlugin("org.scalameta" % "sbt-scalafmt" % "2.6.2")
-addSbtPlugin("ch.epfl.scala" % "sbt-scalafix" % "0.14.9")
+addSbtPlugin("ch.epfl.scala" % "sbt-scalafix" % "0.14.10")
 addSbtPlugin("com.github.sbt" % "sbt-header" % "5.11.0")

@@ -16,7 +16,6 @@ scmInfo := Some(
 Shuwari.organisationSettings
 
 formattingSettings
-nativeSettings
 
 def scala3 = "3.9.0"
 val `cats-effect` = Def.setting("org.typelevel" %% "cats-effect" % "3.7.1")
@@ -27,7 +26,8 @@ val fs2 = Def.setting("co.fs2" %% "fs2-core" % "3.14.0")
 val munit = Def.setting("org.scalameta" %% "munit" % "1.3.6")
 val `munit-cats-effect` = Def.setting("org.typelevel" %% "munit-cats-effect" % "2.2.1")
 val `munit-scalacheck` = Def.setting("org.scalameta" %% "munit-scalacheck" % "1.3.1")
-val `scala-java-time` = Def.setting("io.github.cquiroz" %% "scala-java-time" % "2.7.0")
+val `scala-java-time` = Def.setting("io.github.cquiroz" %% "scala-java-time" % "2.9.0")
+val scalacheck = Def.setting("org.scalacheck" %% "scalacheck" % "1.20.0")
 
 val boilerplate =
   projectMatrix
@@ -92,6 +92,7 @@ val `boilerplate-effect-testkit` =
     .settings(libraryDependencies += `cats-effect`.value)
     .settings(libraryDependencies += `cats-effect-laws`.value)
     .settings(libraryDependencies += `cats-effect-testkit`.value)
+    .settings(libraryDependencies += scalacheck.value)
     .settings(libraryDependencies += `discipline-munit`.value % Test)
     .settings(libraryDependencies += `munit-cats-effect`.value % Test)
     .jvmPlatform(Seq(scala3))
@@ -162,10 +163,6 @@ def scalafixSourceSettings = List(
 )
 
 BoilerplateBuild.fixtureSettings
-
-def nativeSettings = List(
-  libraryDependencySchemes += "org.scala-native" % "test-interface_native0.5_3" % "always"
-)
 
 def formattingSettings = List(
   scalafmtDetailedError := true,
