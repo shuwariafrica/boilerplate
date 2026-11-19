@@ -26,7 +26,7 @@ val fs2 = Def.setting("co.fs2" %% "fs2-core" % "3.14.0")
 val munit = Def.setting("org.scalameta" %% "munit" % "1.3.6")
 val `munit-cats-effect` = Def.setting("org.typelevel" %% "munit-cats-effect" % "2.2.1")
 val `munit-scalacheck` = Def.setting("org.scalameta" %% "munit-scalacheck" % "1.3.1")
-val `scala-java-time` = Def.setting("io.github.cquiroz" %% "scala-java-time" % "2.9.0")
+val `scala-java-time` = Def.setting("io.github.cquiroz" %% "scala-java-time" % "2.11.0")
 val scalacheck = Def.setting("org.scalacheck" %% "scalacheck" % "1.20.0")
 
 val boilerplate =
