@@ -1,4 +1,4 @@
-addSbtPlugin("africa.shuwari" % "sbt-snx" % "0.4.6")
+addSbtPlugin("africa.shuwari" % "sbt-snx" % "0.4.9")
 addSbtPlugin("org.scala-js" % "sbt-scalajs" % "1.23.0")
 
 addSbtPlugin("africa.shuwari" % "sbt-version" % "0.10.0")
